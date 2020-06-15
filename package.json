@@ -1,0 +1,23 @@
+{
+  "name": "plaid-netlify",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/rhino88/plaid-netlify.git",
+  "author": "rhino88 <andersra88@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "netlify-lambda": "^1.6.3",
+    "plaid": "^5.1.0"
+  },
+  "devDependencies": {
+    "@babel/preset-typescript": "^7.10.1",
+    "@types/aws-lambda": "^8.10.56",
+    "@types/node": "^14.0.13",
+    "typescript": "^3.9.5"
+  },
+  "scripts": {
+    "build": "netlify-lambda build src/lambda",
+    "postinstall": "netlify-lambda install"
+  }
+}

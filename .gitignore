@@ -1,0 +1,7 @@
+node_modules/
+.vscode/
+*.swp
+package-lock.json
+# Local Netlify folder
+.netlify
+./lambda/
