@@ -84,12 +84,6 @@ const snakeToCamelKeys = (obj: any) =>
     {}
   );
 
-const CorsSuccessResponse = {};
-
-const CorsErrorResponse = {};
-
-const ErrorResponse = {} as APIGatewayProxyResult;
-
 const CORS_HEADERS = {
   "Access-Control-Allow-Origin": "*",
   "Access-Control-Allow-Headers":
