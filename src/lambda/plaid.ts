@@ -145,7 +145,11 @@ export async function handler(
   );
 
   try {
-    const response = await plaidFunction.call(plaidClient, orderedArguments);
+    const response = await plaidFunction.call(
+      plaidClient,
+      orderedArguments.length > 0 ? orderedArguments : null
+    );
+    console.log(response);
     return createSuccessResponse(response);
   } catch (error) {
     return createErrorResponse(error);
